@@ -1,0 +1,48 @@
+/* register.css */
+
+body {
+    margin: 0;
+    background: url('/static/images/waterdrink_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    background-color: rgba(255, 255, 255, 0.95); /* สีพื้นหลังขาวโปร่งแสงเล็กน้อย */
+    padding: 50px; /* เพิ่มความหนาของ padding ภายในกรอบ */
+    border-radius: 20px; /* ทำขอบมน */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    width: 350px; /* ความกว้างของกรอบ */
+    max-width: 90%; /* กำหนดให้ responsive บนอุปกรณ์เล็ก */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์ขณะ hover */
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e6ddcb;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #a89673;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

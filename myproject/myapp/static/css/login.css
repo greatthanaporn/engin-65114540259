@@ -1,0 +1,72 @@
+/* login.css */
+
+body {
+    margin: 0;
+    background: url('/static/images/waterdrink_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95); /* สีพื้นหลังขาวโปร่งแสงเล็กน้อย */
+    padding: 30px; /* เพิ่มความหนาของ padding ภายในกรอบ */
+    border-radius: 12px; /* ทำขอบมน */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    width: 350px; /* ความกว้างของกรอบ */
+    max-width: 90%; /* กำหนดให้ responsive บนอุปกรณ์เล็ก */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์ขณะ hover */
+}
+
+
+input {
+    width:90%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+button {
+    padding: 5px;
+    width: 45%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* ปุ่มทั้งสอง */
+.form-buttons {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+    gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.form-buttons button,
+.form-buttons .register-button {
+    padding: 10px;
+    width: 45%; /* ให้ปุ่มมีขนาดเท่ากัน */
+    background-color: #a89673; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    border: none; /* เอาเส้นกรอบออก */
+    border-radius: 20px; /* ทำขอบมน */
+    text-align: center; /* จัดข้อความกึ่งกลาง */
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปชี้ */
+    font-size: 16px;
+}
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ */
+.form-buttons button:hover,
+.form-buttons .register-button:hover {
+    background-color: #555;
+}
